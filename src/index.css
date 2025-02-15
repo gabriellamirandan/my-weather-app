@@ -1,0 +1,137 @@
+body {
+    background-color: #f9f7fd;
+    font-family: "Roboto", serif;
+  }
+  
+  img {
+    max-width: 30%;
+    display: flex;
+    justify-content: left;
+    margin: 0px 0px 30px 0px;
+  }
+  
+  h1 {
+    color: #272142;
+    font-size: 35px;
+  }
+  
+  form .fields {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 30px;
+  }
+  
+  main .weather-information {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+  }
+  
+  main .weather-information p {
+    position: relative;
+    top: -30px;
+    color: #27214266;
+  }
+  
+  main .weather-information .number {
+    color: #f65281;
+  }
+  
+  main .temperature {
+    display: flex;
+    justify-content: right;
+    font-size: 50px;
+    font-weight: 800;
+  }
+  
+  main .temperature .number {
+    font-size: 50px;
+    font-weight: 800;
+    position: relative;
+    top: -100px;
+  }
+  
+  main .temperature .unit {
+    position: relative;
+    top: -95px;
+    font-size: 25px;
+    font-weight: 400;
+  }
+  
+  main .temperature .material-symbols-outlined {
+    position: relative;
+    top: -80px;
+    margin-right: 8px;
+  }
+  
+  footer {
+    color: #27214266;
+    font-size: small;
+    text-align: center;
+  }
+  
+  footer a {
+    color: #885df1;
+  }
+  
+  .search-field,
+  .submit-field {
+    border-radius: 5px;
+    border: none;
+  }
+  
+  .search-field {
+    background: #f9f7fe;
+    padding-right: 50%;
+    padding-left: 5%;
+    margin-right: 10px;
+  }
+  
+  .submit-field {
+    padding: 10px 30px;
+    background: #885df1;
+    color: #fff;
+    font-weight: bold;
+  }
+  
+  .container {
+    margin: 60px auto;
+    background-color: #fff;
+    max-width: 600px;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 10px 10px 0 rgba(39, 33, 66, 0.05);
+  }
+  
+  .week-forecast {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: center;
+    margin: 0px 20px 60px 20px;
+  }
+  
+  .week-forecast .material-symbols-outlined {
+    font-size: 35px;
+  }
+  
+  .week-day {
+    color: #27214266;
+  }
+  
+  .day-temperature {
+    color: #f65281;
+    font-weight: bold;
+  }
+  
+  .day-min-temperature {
+    color: #fd99b4;
+  }
+  
+  .week-day,
+  .icon-forecast,
+  .day-temperature {
+    margin: 10px auto;
+  }
+  

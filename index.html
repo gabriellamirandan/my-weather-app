@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="src/index.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playwrite+AU+SA:wght@100..400&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+      rel="stylesheet"
+    />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <title>My weather application</title>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <img src="src/logo-shecodes.png" />
+        <form>
+          <div class="fields">
+            <input
+              class="search-field"
+              type="search"
+              placeholder="Enter a city.."
+              id = "city-input"
+              required
+            />
+            <input class="submit-field" type="submit" value="Search" />
+          </div>
+        </form>
+      </header>
+      <main>
+        <div class="current-weather">
+          <section class="weather-information">
+            <h1><span id="current-city">Coimbra</span></h1>
+            <p>
+              <span id="day">Tuesday</span> <span id="time">11:21</span>, moderate rain <br />
+              Humidity: <span class="number">71%</span>, Wind:
+              <span class="number">18km/h</span>
+            </p>
+          </section>
+          <div class="temperature">
+            <span class="material-symbols-outlined"> partly_cloudy_day </span
+            ><span class="number">12</span> <span class="unit">°C</span>
+          </div>
+        </div>
+      </main>
+      <div class="week-forecast">
+        <div class="day-forecast">
+          <div class="week-day">Wed</div>
+          <div class="material-symbols-outlined icon-forecast">rainy</div>
+          <div class="day-temperature">
+            <span class="day-max-temperature">13º</span>
+            <span class="day-min-temperature">8º</span>
+          </div>
+        </div>
+        <div class="day-forecast">
+          <div class="week-day">Thu</div>
+          <div class="material-symbols-outlined icon-forecast">rainy</div>
+          <div class="day-temperature">
+            <span class="day-max-temperature">12º</span>
+            <span class="day-min-temperature">7º</span>
+          </div>
+        </div>
+        <div class="day-forecast">
+          <div class="week-day">Fri</div>
+          <div class="material-symbols-outlined icon-forecast">sunny</div>
+          <div class="day-temperature">
+            <span class="day-max-temperature">14º</span>
+            <span class="day-min-temperature">4º</span>
+          </div>
+        </div>
+        <div class="day-forecast">
+          <div class="week-day">Sat</div>
+          <div class="material-symbols-outlined icon-forecast">
+            partly_cloudy_day
+          </div>
+          <div class="day-temperature">
+            <span class="day-max-temperature">14º</span>
+            <span class="day-min-temperature">4º</span>
+          </div>
+        </div>
+        <div class="day-forecast">
+          <div class="week-day">Sun</div>
+          <div class="material-symbols-outlined icon-forecast">rainy</div>
+          <div class="day-temperature">
+            <span class="day-max-temperature">12º</span>
+            <span class="day-min-temperature">6º</span>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <p>
+          This project was coded by
+          <a
+            href="https://www.shecodes.io/graduates/120184-gabriella-nunes"
+            target="_blank"
+            >Gabi</a
+          >
+          and is
+          <a href="https://github.com/shecodesio/weather" target="_blank">
+            on GitHub</a
+          >
+          and
+          <a href="#" target="_blank">hosted on Netlify</a>
+        </p>
+      </footer>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>
