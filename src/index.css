@@ -94,6 +94,10 @@ body {
     color: #fff;
     font-weight: bold;
   }
+
+  .submit-field:hover {
+    background: #6c37f1;
+  }
   
   .container {
     margin: 60px auto;
